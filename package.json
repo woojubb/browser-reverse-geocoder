@@ -1,0 +1,41 @@
+{
+  "name": "browser-reverse-geocoder",
+  "version": "1.0.1",
+  "description": "A lightweight, browser-based reverse geocoding library using GeoJSON data",
+  "main": "dist/browser-reverse-geocoder.umd.js",
+  "module": "dist/browser-reverse-geocoder.es.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "geocoding",
+    "reverse geocoding",
+    "geojson",
+    "browser",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "peerDependencies": {
+    "rbush": "^3.0.1",
+    "@turf/turf": "^7.1.0"
+  },
+  "dependencies": {
+    "rbush": "^3.0.1",
+    "@turf/turf": "^7.1.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woojubb/browser-reverse-geocoder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/woojubb/browser-reverse-geocoder/issues"
+  },
+  "homepage": "https://github.com/woojubb/browser-reverse-geocoder#readme"
+}
