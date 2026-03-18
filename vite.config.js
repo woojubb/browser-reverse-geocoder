@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -7,16 +6,17 @@ export default defineConfig({
       entry: 'src/index.js',
       name: 'BrowserReverseGeocoder',
       fileName: (format) => `browser-reverse-geocoder.${format}.js`,
-      formats: ['es', 'umd']
+      formats: ['es', 'umd'],
     },
     rollupOptions: {
-      external: ['rbush', '@turf/turf'],
+      external: ['rbush', '@turf/bbox', '@turf/boolean-point-in-polygon'],
       output: {
         globals: {
           rbush: 'RBush',
-          '@turf/turf': 'turf'
-        }
-      }
-    }
-  }
+          '@turf/bbox': 'turfBbox',
+          '@turf/boolean-point-in-polygon': 'turfBooleanPointInPolygon',
+        },
+      },
+    },
+  },
 });
